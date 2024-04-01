@@ -1,4 +1,4 @@
-package me.dio.copa.catar.presentation.screens.matchitem
+package me.dio.copa.catar.presentation.match.components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -16,12 +16,13 @@ import me.dio.copa.catar.ui.theme.Shapes
 
 @Composable
 fun MatchItem(
-    match: MatchDomain
+    match: MatchDomain,
+    notificationOnClick: (match: MatchDomain) -> Unit
 ) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(8.dp),
+            .padding(horizontal = 8.dp, vertical = 4.dp),
         shape = Shapes.large
     ) {
         Box {
@@ -35,7 +36,7 @@ fun MatchItem(
             Column(
                 modifier = Modifier.padding(16.dp)
             ) {
-                NotificationIcon(match)
+                NotificationIcon(match, notificationOnClick)
                 Title(match)
                 Teams(match)
             }

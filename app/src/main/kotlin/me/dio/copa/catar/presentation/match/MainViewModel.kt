@@ -1,4 +1,4 @@
-package me.dio.copa.catar.presentation.viewmodel
+package me.dio.copa.catar.presentation.match
 
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -12,8 +12,6 @@ import me.dio.copa.catar.domain.model.Match
 import me.dio.copa.catar.domain.usecase.DisableNotificationUseCase
 import me.dio.copa.catar.domain.usecase.EnableNotificationUseCase
 import me.dio.copa.catar.domain.usecase.GetMatchesUseCase
-import me.dio.copa.catar.presentation.MainUiAction
-import me.dio.copa.catar.presentation.MainUiState
 import me.dio.copa.catar.remote.NotFoundException
 import me.dio.copa.catar.remote.UnexpectedException
 import javax.inject.Inject

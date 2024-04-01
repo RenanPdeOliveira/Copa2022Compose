@@ -1,4 +1,4 @@
-package me.dio.copa.catar.presentation.screens.matchitem
+package me.dio.copa.catar.presentation.match.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
